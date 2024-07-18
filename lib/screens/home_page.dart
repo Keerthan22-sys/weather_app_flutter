@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<void> _fetchWeatherData(String cityName) async {
-    final apiKey = "96d6ba26696bc101b0acbf255e50cb8e"; // your API key
+    final apiKey = ""; // your API key
     final url = "http://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=$apiKey&units=metric";
     final response = await http.get(Uri.parse(url));
 
